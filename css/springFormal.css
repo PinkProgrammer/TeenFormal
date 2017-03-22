@@ -1,0 +1,235 @@
+
+html, body, footer {
+	margin: 0;
+	padding: 0;
+	font-family: 'Droid Sans', sans-serif;
+}
+
+/*I want my backgrounds to span the width of the page, but I want my textual content to have padding on each side.*/
+p, h3, h4 {
+	padding: 0 15%;
+}
+
+p {
+	font-size: 20px;
+}
+
+h2 {
+	padding-top: 20px;
+	text-align: center;
+}
+
+h3 {
+	color: #ff00aa; /*My h3 text should be pink*/
+}
+
+footer {
+	width: 100%;
+	bottom: 0;
+	left: 0;
+}
+
+table {
+	border-collapse: collapse; /*makes the borders blend into each other*/
+	margin: 0 auto; /*centers the table*/
+	text-align: left;
+}
+
+th, td {
+	border: 1px solid black;
+	padding: 10px;
+	font-size: 20px;
+}
+
+label {
+	margin: 5px 0 0 0;
+	display: inline-block; /*gives ability to use margins,padding without taking up the whole line*/
+}
+
+input[type=text] {
+	width: 100%;
+	padding: 5px;
+	margin: 8px 0;
+	box-sizing: border-box; /*causes these to include padding/margins,etc in size*/
+	border-radius: 3px; /*gives the corners a rounded look*/
+	font-size: 20px;
+}
+
+select {
+	padding: 5px;
+	border-radius: 3px;
+	margin: 12px;
+	font-size: 20px;
+}
+
+button {
+	background-color: darkred;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin-left: 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+  	margin: 10px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+    font: 20px 'Droid Sans', sans-serif;
+}
+
+.navBar {
+	font: 24px 'Cherry Swash', cursive;
+}
+
+.navBar ul {
+    list-style-type: none; /* No bullets */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+
+.navBar li {
+	float: right; /*be on the right side of the nav bar next to each other*/
+	letter-spacing: 2px;
+	padding-right: 40px;
+}
+
+
+#home {
+	float: left; /*home page nav link should be on the left side*/
+	padding-left: 40px;
+}
+
+
+.navBar li a {
+    display: block; /*should continue to take up their own space*/
+    color: white;
+    text-align: center;
+    padding: 22px 10px;
+    text-decoration: none; /*do not want links to have underlines*/
+}
+
+
+.navBar li a:hover {
+    background-color: #333333; /*nav link should turn grey if mouse hovers*/
+}
+
+.jumbotron {
+	text-align: center;
+	color: white;
+	text-shadow: 2px 2px 4px #000000; /*Makes my text pop a little with a black shadow effect*/
+	background-color: #fff;
+	padding: 50px 0;
+	background-image: url("../img/stars.jpg");
+	background-attachment: fixed; /*background image won't scroll*/
+	background-repeat: no-repeat; /*bi will not repeat*/
+	background-size: cover; /*background will cover the span of the div*/
+	overflow: hidden;
+}
+
+.jumbotron h1 {
+	font: bold 120px 'Sacramento', cursive;
+	margin: 0;
+	padding: 10px 0;
+}
+
+.jumbotron h2 {
+	font: 60px 'Cherry Swash', cursive;
+	padding: 5px;
+	margin: 0;
+	letter-spacing: 1px;
+}
+
+.details {
+	background-image: url("../img/cupcakes.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.flyer {
+	max-width: 40%;
+	max-height: 40%;
+	display: block;
+	margin: 30px auto; /*needs to be centered in the page*/
+	background-color: transparent;
+	border: 3px solid black;
+}
+
+.general {
+	border-top: 2px solid black;
+}
+
+.info, .dress, .photos, .general, .cost, .register, .contact-form {
+	font-size: 22px;
+}
+
+.photos, .general {
+	background-color: #ffff99; /*light yellow*/
+	padding: 5px;
+}
+
+.register, .contact-form {
+	display: block;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.about p {
+	font-size: 20px;
+	padding-top: 20px;
+}
+
+/*#contact-body {
+    background-image: url("../img/stars.jpg");
+    background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}*/
+
+
+.contact-form p {
+	padding: 40px 0;
+	text-align: left;
+	font-size: 28px;
+	margin: 0;
+}
+
+.register-info {
+	text-align: center;
+}
+
+.register-info a {
+	display: block;
+	font-size: 22px;
+	margin: 5px 0;
+
+}
+
+.reveal-if-yes {
+	opacity: 0;
+	max-height: 0;
+	overflow: hidden;
+}
+
+input[id='yes']:checked ~ .reveal-if-yes{
+  opacity: 1;
+  max-height: 100%;
+  overflow: visible;
+}
+
+/*Countdown CSS*/
+
